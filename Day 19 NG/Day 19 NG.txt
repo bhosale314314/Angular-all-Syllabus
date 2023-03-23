@@ -1,0 +1,27 @@
+
+Angular Deployment:
+
+Deployment consist of two processes/parts:
+1. Transpilation: converting TS code JS code.
+2. compilation : Converting JS code into mininfied JS code.
+
+Angular provides both process into a single commond i.e. ng build
+
+
+Angular provides two types of compilation i.e AOT and JIT.
+
+JIT: Just In time compiler. The application compiles inside the browser during the runtime.
+	If we chnage small piece of code then complete application is going to compile once again.
+	JIT compiler has been removed from angular 12 version.
+	
+AOT: Ahead of Time compiler. This compiler compiles the application during the build time.
+	If we chnage in  particular piece of code then only that part of the code will be compiled once again not the complete angular code.
+	From angular 13, AOT is used as default compiler.
+	
+	Benefits of AOT:
+	1. Faster reneding/ minimum loading time.
+	2. Less API calls.
+	3. Minimizing the errors.
+	4. Better security.
+
+

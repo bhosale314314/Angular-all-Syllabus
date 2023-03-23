@@ -1,0 +1,39 @@
+Demo URL: 
+http://preview.themeforest.net/item/construction-business-building-company-wordpress-theme/full_screen_preview/20273654?_ga=2.179736870.343210478.1650467558-760272616.1643649660&_gac=1.117130228.1649210438.CjwKCAjwrqqSBhBbEiwAlQeqGtZBbeHSxFJwJ3Z7AtjmLvuYqWlvEytacUCVaGD34f41omFtQMELABoC0gcQAvD_BwE
+
+Construction :
+	ConstroTech
+	Modules:
+	1. Home ====
+	2. OurServices
+	3. portfolio
+	
+	Create folder:
+	1. Shared :
+		header
+		footer
+	2. Services:
+		All services
+				
+		
+	3. pipe and directive
+		all pipes, all directive
+	
+	Functionalities:
+	Client: ConstroTech Private Limited:
+	Basic idea of the project is to show all the information related to construction based on city. As of now all top builders are having 
+	their own websites, but this project will combine all the info of top 10/20 builders from each city at a single point so that user can 
+	easily compare their quality and can select a proper builder.
+	If user want to construct  thier own banglow or building then this application will provide all the information related to architect, 
+	authorized dealers for the material, top 10 contractor in that paerticular area.
+	1. User able to login and rigister at our site.
+	2. Once user login to the application user will land on home screen. 
+	Here user will get info about :
+		a) the top 10 contruction consultant from selected city.
+		b) will get the details of authorized dealers for the material.
+		c) will show top 10 builders info and their recent as well as upcoming projects in perticular city.
+		d) Achievements of particular builders and their quality of work as well as comments from old user.
+		e) Will aslo help on building/ banglow registration process.
+		f) will help to provide completion certificate process.
+	3. User can change city.
+	

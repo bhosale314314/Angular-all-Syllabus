@@ -1,0 +1,51 @@
+Summary:
+Angular life cycle:
+constuctor :
+ngOnchnages:
+ngOninit : 
+ngDocheck : 
+ngAfterContentInit:
+ngAfterContentCheck:
+ngAfterViewInit
+ngAfterViewCheck
+ngDestory:
+
+<app-mycomp [name]="name1">
+<h1>jkdshfkjs</h1>
+<ng-content></ng-content>
+</app-mycomp>
+
+Angular Service:
+
+
+
+Dependency Injection:
+It is a pattern of class coding in which class recieves its dependencies externally rather than creating itself.
+
+
+HTTP Client: 
+
+HttpClient is a built in service used to communicate with backend.
+It is also used for sending the http request and get the response.
+We will get the reposonse of http request in terms of observable.
+It can have error handling capability.
+We can cancel the http request.
+Htpp provides us below methods.
+
+get ----> Used to get the data from the backend.
+post ----> Used to send as well get the data from backend.
+put ----> Used to update the data.
+delete---> Used to delete the data.
+
+post ---> This method can perform functionality of all above methods.
+
+
+Observables:
+Observables are asynchronous or parellal flow of execution which can handle multiple events at a time.
+Observables are not from core angular librabries, it came from RxJs.
+Observables can handle three events:
+next(), complete(), error().
+Observables can handle the errors.
+Observables can be cancellable.
+Observables are used to get the data from backend.
+

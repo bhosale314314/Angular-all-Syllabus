@@ -1,0 +1,21 @@
+
+
+Construction :
+	ConstroTech
+	Modules:
+	1. Home ====
+	2. OurServices
+	3. portfolio
+	
+	Create folder:
+	1. Shared :
+		header
+		footer
+	2. Services:
+		All services
+				
+		
+	3. pipe and directive
+		all pipes, all directive
+	
+	

@@ -1,0 +1,30 @@
+
+Angular Features:
+
+	Different Versions of Angular :
+	2,4,5,6,7,8,9,10,11,12,13.
+	
+	There is no version of angular 3 as it was exceeding the the version of router. so to avoid the confusion for devs they have decided to
+	release angular 4 directly.
+	
+	Different Env :
+	Local: Where we do our development.
+	dev: Once u complete the development then will deploy our application to dev env and here developer will do 
+	proper testing about all the functionality.
+	sit: Once u tested all the functionality at dev and working fine then will deploy our application at SIT, 
+	here tester will do end to end testing and log a defect if arises any.
+	prod: this is the final env which will be handover to the client or real user of the application.
+	
+	Features:
+	1. Released Typescript version 4.4.
+		They have also stopped the support for 4.2 and 4.3.
+	
+	2. No longer support for Internet Explorer 11, because of browser compatibility.
+	
+	3. Enhancement to the angular Test.
+	
+	4. 100 % Ivy now and no more support for View Engine.
+		Ivy is an internal engine used for running angular code.
+	
+	5. Angular CLI enhancements.
+	

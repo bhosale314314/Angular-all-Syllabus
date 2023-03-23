@@ -1,0 +1,10 @@
+
+1) Template Driven Forms:
+	Maximum things will be handleled at template or html side.
+	Need to use ngModel to bind the data.
+	We can add validations in template itself.
+	
+
+2) Reactive Forms:
+	
+	

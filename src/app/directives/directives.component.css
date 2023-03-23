@@ -1,0 +1,26 @@
+.test1{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    /* font-size: large; */
+    /* padding-top: 2px; */
+
+}
+
+.test2{
+    background-color: rgb(42, 165, 97);
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    /* font-size: large; */
+    /* padding-top: 3px; */
+}
+.test3{
+    background-color: rgb(10, 230, 29);
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    /* font-size: large; */
+    /* padding-top: 3px; */
+}

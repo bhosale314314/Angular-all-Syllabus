@@ -1,0 +1,37 @@
+<h2> Reactive Forms</h2>
+
+<form [formGroup]="myForm" (ngSubmit)="onSubmitForm()">
+    <div class="form-group">
+        <label >First Name: </label>
+        <input type="text" class ="form-control" formControlName="fname"
+        required [ngClass]="{'is-invalid': isSubmitted && f.fname.errors}"
+        placeholder="First Name is required" >
+        <div *ngIf="isSubmitted && f.fname.errors?.required" class="invalid-feedback">First name is required</div>
+    </div>
+
+    <div class="form-group">
+        <label >Last Name:</label>
+        <input type="text" class ="form-control" formControlName="lname">
+    </div>
+
+    <div class="form-group">
+        <label >Email:</label>
+        <input type="text" class ="form-control" formControlName="email"
+        required [ngClass]="{'is-invalid': isSubmitted && f.email.errors}"
+        placeholder="Email is required" >
+        <div *ngIf="isSubmitted && f.email.errors?.required" class="invalid-feedback">Email is required</div>
+        <div *ngIf="isSubmitted && f.email.errors?.pattern" class="invalid-feedback">Please Enter valid email.</div>
+    </div>
+
+    <div class="form-group">
+        <label >Password:</label>
+        <input type="text" class ="form-control" formControlName="pass">
+    </div>
+
+    <div class="form-group">
+        <label >Confirm Password: </label>
+        <input type="text" class ="form-control" formControlName="cpass">
+    </div> <br><br>
+    <!-- {{count | cust}} -->
+    <button class="btn btn-info" [disabled]="myForm.invalid">Submit</button>
+</form>

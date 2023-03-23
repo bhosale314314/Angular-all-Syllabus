@@ -1,0 +1,84 @@
+Angular Folder Structure:
+
+Version:
+	Angular : 13.2.0
+			13 : Major Release / breaking changes.
+			2 : Minor release / new features added.
+			0 : Patch release / bug fix.
+			
+a) Node Modules:
+	It is collection of libraries to run the angular project. 
+	
+b) package.json:
+	This is the key file of angular. 
+	Every data will be stored in the form of JSON / Object.
+	It consist dependencies of the project. 
+	It also consist of basic commands which are required to operate on angular project.
+		i.e. start angular server, test application, build application
+		
+c) Angular.json:
+	This file is an entry point of angular project.
+	consist of basic info related to angular project.
+	
+d) Main.ts
+	This file is used for bootstraping process of angular project.
+	contains root module.
+	It is second entry point of angular project.
+	It consist of envoirnment of the project.
+	
+e) index.html:
+	Resonsible for SPA.
+	contains selctor of component.
+	
+
+	
+HTML5 Web component: 
+HTML5 has introduced the concept of web component. 
+Inside the web component we can crite code  which can be used throughout the application.
+angular components are similar like web compo with additional features.
+Every web component / angular component has their selector.
+
+
+
+** Basic Building Blocks of the Angular.
+
+1. Modules
+2. Component
+3. Template
+4. Decorator/ Metadata
+5. Service
+6. Dependency Injection
+7. Data Bidnding.
+
+1. Modules:
+	Module has came into picture from ES6.
+	Module consist of classes, import, export, providers, bootstrap.
+	There are two types of modules. i.e root module and feature module.
+	We can change our root module  from main.ts. 
+	We can create feature module with command : ng generate module exam / ng g m exam.
+	Root module is reposible for creating feature module or another modules.
+	app module is my root module of the angular project.
+	
+2. Component:
+	Compelete angular is based component architecture.
+	component is collection of class, template and decorator.
+	Decorator tells to angular, how to process on the class.
+	comp have four files===>
+	comp.css ====> includes css code.
+	comp.html ====> includes html code.
+	comp.spec.ts ===> includes test cases.
+	comp.ts ====> class file. It is main file of the comp. 
+	
+	compo class consist of methods  and properties.
+	* Every angular project has atleast one root component and can have zero or multiple feature component.
+	app comp is my root component.
+	We can create feature component with the help of command: ng generate component componentName / ng g c student.
+	Every comp has their own selector. 
+	With the help of selector I can call the component.
+	
+	Every angular project has atleast one root module, one root component and we can have zero or multiple feature module as well as component.
+	
+	** Every angular porject can have multiple root components.
+	
+
+

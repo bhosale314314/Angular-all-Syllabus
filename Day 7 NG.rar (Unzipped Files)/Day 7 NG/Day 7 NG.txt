@@ -1,0 +1,97 @@
+Summary: 
+
+Angular Framework :
+
+Library:
+
+Intro and feature of angular:
+
+Installation Process:
+
+Angular CLI:
+
+Project creation:
+
+Folder structure: node modules, package.json, angular.json, main.ts, appmodule, appcomp, index.html
+
+Angular work flow: angular.json ==> main.ts ==> appmodule ==> app comp===> index.html
+
+Basic Building Blocks: 
+
+module: 
+
+comp : 
+
+decorators
+
+data binding: 
+
+directives: 
+
+forms : 
+
+validations:
+
+
+
+
+
+
+
+Reactive Forms:
+	FormGroup: collection of form controls.
+	FormControl: single entity of the form.
+	FormBuilder: used to create FormGroup, FormControl, FomrArray.
+	
+Validations in angular Forms:
+
+		frm.form.valid: will check the form is valid or not.
+		frm.submitted && frm.invalid: form is submitted and form in invalid.
+		fname.errors: will retutn an error object contains all details inside that.
+		
+		fname.errors?.required: will check the field is required but given value or not.
+		email.error?.pattern: checks mail is proper or not i.e. it contains @ and .
+		
+		touched : check the field is touched by user or not.
+		
+		
+	*In Reactive form: 
+	If we need to read the values of form control then we need to write getter function which will return all the controls
+	so that we can check the validations.
+					 
+					 
+	Template Driven Form:
+		1. Maximum things will be handled in comp.html
+		2. Easy to write code for simple use.
+		3. uses ngModel
+		4. Validations are more complex.
+		5. complex for testing.
+	
+	Reactive Form: 
+		1. Maximum things will be handled in comp.ts
+		2. Easy to write for complex use.
+		3. Uses formcontrol, formbuilder.
+		4. Validations are less complex.
+		5. Easy for testing.
+		
+		
+	* CLI commands:
+		CLI: Command Line interface.
+		To install Angular CLI: npm install -g @angular/cli
+		Angular Version: ng --v
+		Create New Project: ng new demo
+		Start a server: npm start / ng serve
+		create a new comp: ng g c compName
+		create a new module: ng g m moduleName
+		install new libary: npm install NewLibraryName
+		
+		
+	* Angular Pipes: 
+		Pipes are responsible for transforming the data from one format to another format.
+		There are two types of pipes:
+		Built in pipe and custom pipe.
+		Buit in pipes: uppercase, lowercase, titlecase, date, currancy, slice, json.
+		Custom Pipe: User can create pipe to trasform the data.
+		
+		e.g. Angular ===> aNgUlAr 
+			 input   ===> output.

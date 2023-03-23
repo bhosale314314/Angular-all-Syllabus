@@ -1,0 +1,52 @@
+
+3) Template : It is combination of HTML and CSS where developer can desing UI.
+
+4) Decorator: Decorator tells to angular how to process on class.
+
+5) Metadata: Metadata is data about data. also gives extra info about the decorator.
+
+
+
+1. Flow of Angular 
+		1) Angular.json ===> First entry point of angular. From this file will get main.ts file path. So angular will give call to main.ts.
+
+		2) Main.ts ===> Second entry point of angula project. This file is reponsible for bootstrapping process of angular project. 
+						From this file angular will get root module. By default Appmodule is the root module we can chnage our root module as well.
+						So main.ts will give call to app module.
+		
+		3) app.module: There are two types of modules root module and feature module. App module is root module. this file consist of import, export, declarations,
+						providers, boostrap. From boostrap app module will get root component so call will give to root component.
+						
+		4) app.comp : comp consist of class, template, decorator. class is havingt the selector. In comp we have business logic which will be executed.
+						Then call will be given to index.html.
+						
+		5) index.html: It is reponsible for SPA. It is a only one HTML page from whole angular project which will be loaded on browser.
+	
+	
+ ** Data Binding:
+	Binding is used to bind static as well as dynamic data.
+	As well used to communicate from html to ts and ts to html.
+	
+	a) Interpolation:
+		Used to bind the static as well as dyanamic data from comp.ts to comp.html.
+		It is aslo called as one way data binding. i.e. one way of communication.
+		syntax: {{propertyName}}
+		
+	b) Property or Attribute Binding:
+		This is used to communicate from comp.ts to comp.html.
+		Binds the data to the attribute/ propperty.
+		
+		syntax: [attrName] = "propertyName"
+		
+	c) Event Binding:
+		It is used to communicate from comp.html to comp.ts.
+		It is also one way type of communication.
+		It is based on angular/javascript events.
+		syntax : (click) = "eventName()"
+		
+		
+	d) Two way data binding:
+		This is used to communicate from ts to html and html to ts.
+		it is combination of propperty binding and event bidning.
+		
+		

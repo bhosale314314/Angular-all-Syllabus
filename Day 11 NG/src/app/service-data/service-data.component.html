@@ -1,0 +1,33 @@
+<!-- <p>service-data works!</p> -->
+
+<!-- <table class="table table-responsive">
+    <tr>
+        <th>Id</th>
+        <th>User Id</th>
+        <th>Title</th>
+        <th>body</th>
+    </tr>
+    <tr *ngFor="let dt of allData">
+        <td>{{dt.id}}</td> 
+        <td>{{dt.userId}}</td>  
+        <td>{{dt.title}}</td>   
+        <td>{{dt.body}}</td>   
+    </tr>
+</table> -->
+
+<table class="table table-responsive">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>User Name</th>
+        <th>Email</th>
+        <th>Address</th>
+    </tr>
+    <tr *ngFor="let dt of userData">
+        <td>{{dt.id}}</td> 
+        <td>{{dt.name}}</td>  
+        <td>{{dt.username}}</td>   
+        <td>{{dt.email}}</td>   
+        <td>{{dt.address.street}}, {{dt.address.city}}</td>
+    </tr>
+</table>

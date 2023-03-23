@@ -1,0 +1,39 @@
+
+
+<div class="card bg-danger">
+    <div class="card-header">First component</div>
+    <div class="card-body">
+        This is First component.
+        <br><br>
+        <button class="btn btn-warning" (click)="sendDataFromFirst()">Send Data from first</button>
+    
+        
+
+
+        <button pButton type="button" class="p-button-info"></button>
+        <button pButton type="button" label="Primary"></button>
+        <button pButton type="button" label="Secondary" class="p-button-secondary"></button>
+        <button pButton type="button" label="Success" class="p-button-success"></button>
+        <button pButton type="button" label="Info" class="p-button-info"></button>
+        <button pButton type="button" label="Warning" class="p-button-warning"></button>
+        <button pButton type="button" label="Help" class="p-button-help"></button>
+        <button pButton type="button" label="Danger" class="p-button-danger"></button>
+    </div>
+</div>
+
+
+<div class="container">
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Pincode </th>
+            
+        </tr>
+        <tr *ngFor="let dt of postOffice">
+            <td >{{dt.Name}}</td>
+            <td >{{dt.Pincode}}</td>
+        </tr>
+    </table>
+</div>
+

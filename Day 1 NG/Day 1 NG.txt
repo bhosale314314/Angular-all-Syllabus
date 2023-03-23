@@ -1,0 +1,62 @@
+
+Angular:
+
+Angular is framework based on Javascript and Typescript.
+
+Framework: Framework is a collection of libraries at single point.
+
+Library: Library is a collection of classes or code at single point. Libraries are used to achieve specific task.
+		e.g. chart.js, jquery, primeng, angular material, bootstrap.
+
+
+Features:
+	Angular developed by the Google.
+	Released their first version in Oct 2010 i.e. Angular JS / Angular 1.0 which was completely based on javascript.
+	Angular 2 has been released in 2016.
+	Latest version of Angular is 13.
+	Two version are going to release in single year. Angular 2/4/5/6/7/8/9/10/11/12/13.
+	It is used for creating dynamic web appplication.
+	It is completely based on JS and TS so that can implement all the OOPs.
+	Based on single page application.
+	clean and loosely coupled.
+	code reusability. 
+	seperate HTML, CSS, JS/TS code files.
+	cross platform.
+	open source
+	used for web as well as mobile application.
+	support routing.
+	support PWA.
+	
+	
+Installation Process Of Angular : 
+
+	Angular CLI :
+		CLI : Command Line Interface.
+		Used to create angular project, run the angular project, debug the project, modify/ develop.
+		Used to creat basic building blocks of angular.
+		
+	Step 1:
+	Download and install node.js.
+	node -v : to check node installed successfully or not.
+	
+	Step 2:
+	Install Angular CLI: 
+	npm install -g @angular/cli
+	To check angular cli has installed or not: ng --version
+	
+	Step 3:
+	Create Angular Project:
+	open cmd and run the command: ng new demo
+	this will ask you two question 
+	1. Would you like to add routing? ===> N and then enter.
+	2. Which CSS u want to use ===> CSS and then enter.
+	
+	Step 4:
+	To Start or run the angular web application:
+	run the command: npm start or ng serve
+	
+	Step 5:
+	Open the browser and run the url:
+	url: http://localhost:4200/
+	
+	

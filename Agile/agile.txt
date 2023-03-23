@@ -1,0 +1,117 @@
+Agile :
+
+Git : 
+
+1. open git bash or git.
+2. git clone repoUrl --- > Clone or download the repository code at your local.
+3. git init ----> initilize the git in the folder.
+4. git add ---> will add the files whatever we need to commit.
+	git add . ----> will add all the files.
+	git add home.comp.html ---> will add home comp.html file only.
+5. git commit -m "Home dropdonw impl"
+6. git push origin branchName -- code will be pushed into that branchName branch.
+7. git status ----> will give the files status whether asses or not.
+
+
+Software development methods:
+1. Waterfall : complete application will be developed first and then handover to the client with all the features. 
+				In this case user cann't use the application until it is developed completely.
+2. Agile: Application will be handover to the client feature by feature.
+
+
+Company Name: Claritech
+Client: XYZ 
+Project Name: Constrotech
+Requirements:
+1. home screen
+2. login and register
+3. portfolio
+4. city wise impl
+
+
+Bitbucket:
+
+Constrotech:
+ Agile Process:
+	1. Business Analyst: will responsible for communication between client and comp. will gather the requirement. e.g. Rajnikant.
+	   BA will collect CRS (Customer Requirements Specification) document.
+	2. BA or Scrum Master/ Manager will create SRS(Software Requirements Specification) document from CRS, which include all the technologies and requirements.
+	3. Scrum Master or BA will devide SRS into small part based on feature and client's requirements i.e. Sprint.
+	4. Scrum master will create an user stories under each sprint.
+	5. Scrum will start the sprint.
+	
+	
+	Agile Terms:
+	Sprint: Complete application will be break into functionalities and delivered to client by frequent period i.e. 7, 15 or 30 days.
+	Scrum: Daily meeting or standup call for the regular update.
+			1) What u have done today ?
+			2) What are u going to do tomorrow.
+			3) Is there any roadblock ? 
+	Scrum Master: Who can handle daily activity e.g.  Shubham.
+	Scrum Team: Developer as tester are the part of scrum team.
+	User Story: Each task is devided into user story.
+			e.g. US 1: To Desing an header and footer for the constro app.
+				 US 2: To design and develop the login/ register screen.
+				 
+	Sub task: Complete user story will be devided into samll tasks.
+	e.g. US 2: To design and develop the login/ register screen.
+	     Sub-task: 	1. Design an login screen. e.g. Surekha
+					2. Design an register screen. e.g. Sachin
+					3. API integration for login screen. e.g Sidheshwar
+					4. API integration for register screen. e.g Sidheshwar
+					5. Functional testing for login/ register. e.g. Surekha, Sachin, Sidheshwar.
+		
+	Backlog: Storage of all the user stories.
+	
+	Defect : Fault in earlier strint user story.
+	e.g : Def 1: Login screen: CSS is breaking. and tester will assing this defect to Surekha.
+	
+	Deployment/ Env: 
+	project name: constrotech.
+	domain: www.constrotech.com
+	tester: Vaibhav
+	
+	Local: Where application will be developed.
+	dev : Here all the developer as well as scrum master can test the application.
+		url : www.constrotech-dev.com 
+	sit: Here the application will be tested by tester and log a defects in the sprint.
+		url: www.constrotech-sit.com
+	uat: here application will be tested by scrum master/ manager/ BA / client.
+		url: www.constrotech-uat.com
+		
+	prod: Only end user are having access to this env.
+		url: www.constrotech.com
+		
+		
+		Sprint 1:
+		1 Jun to 3 Jun : Sprint Planning: BA and SM will discuss the requirement and scope of the sprint.
+		
+		4 Jun to 14 Jun : Actual development happen with daily scrum meeting.
+		
+		15 Jun: Code will be deployed to Dev- round 1. Here all the developer will test the complete application.
+		
+		16 Jun: Will deploy the application to SIT round 1.
+		
+		16 Jun to 17 Jun: tester will test the application and raise a defect if found.
+		
+		18 Jun to 19 Jun: Developer will fix all the bugs.
+		
+		20 Jun: Code will be deployed to Dev round 2. Here all the developer will test the complete application.
+		
+		21 Jun: Will deploy the application to SIT round 2.
+		
+		22 Jun: Tester will test complete application along with raised defects.
+		
+		23 Jun- 25 Jun: Application will be deployed to UAT env.  Here BA, SM, Client will test the application. 
+				If found all things are proper then will go ahead with prod.
+				
+		26 Jun: Application will be deployed to prod env. End user can access the application.
+		
+		28 Jun: Sprint Retrospective: positive and negative points will be discuss which was happened during the development.
+		
+		
+		
+		Sprint 2: 
+			1 Jul to 3 Jul : Sprint Planning.
+			
+			4 Jul to 14 Jul: Actual development.

@@ -1,0 +1,32 @@
+
+Intercomponent communication :
+
+Intercomponent communication is used to send the data from one comp to another comp.
+It might be parent or child or sibling or unrelated comp.
+
+If it is parent to child communication the we can pass or get the data by three ways i.e.
+	@Input, @Output, @ViewChild
+	
+	1. @Input :
+		It is a decorator used to send the data from parent to child.
+		It uses attribute or property binding.
+		
+	2. @Output:
+		It is a decorator used to send the data from child to parent.
+		It uses event binding.
+		It uses custom events using event emitter.
+		
+	3.  @ViewChild:
+		Used to send the data from child to parent.
+		with the help of viewchild we can take complete control of child comp inside parent.
+		we can call methods and properties of child comp inside only ngAfterViewInit of parent comp.
+		
+		
+	
+	Create a parent child comp:
+	take input field in parent and send the input typed data from parent to child. --  @Input
+	
+	take one dropdown and onchange of value send the data from child to parent. --- @Output
+	
+	perform operation in child before loading on the browser. --- @viewchild.
+	

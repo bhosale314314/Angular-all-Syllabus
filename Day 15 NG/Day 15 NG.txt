@@ -1,0 +1,36 @@
+
+Angular Routing:
+	
+	Intercomponent comm using Routing:
+	
+	There are two ways to recieve the data from routing.
+	
+	1. Route Param: It gives me direct values.
+	
+	2. Param Map: It gives values interms of observables.
+	
+	
+Angular Guards:
+	Guards are used to protect the component as well module.
+	used for authentication purpose.
+	Guards are allow to enter into any of the component 
+	Guards will ask for the permission while leaving from comp.
+	can ftech the data before loading the component.
+	we can create guard with the help of ng g g guadName
+	
+	Types of Guards:
+	
+	1. canActivate: This guard will give the pemrmission to enter in to the component.
+	
+	2. canDeactivate: 
+		This guard will ask for the permission to leave the component.
+		
+	3. canActivateChild: This guard will give the pemrmission to enter in to the child component.
+	
+	4. Resolve: This guard can fetch the data before entering into the component.
+	
+	5. canLoad: this guad is used to detect particular lazy loaded child route is loaded into dom or not.
+		
+	
+	
+	

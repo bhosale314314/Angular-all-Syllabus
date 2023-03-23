@@ -1,0 +1,58 @@
+<div class="container" >
+
+<h3>Structural Directives</h3>
+
+
+<h5>*ngIf==>Directives</h5>
+
+<div *ngIf="mark>50  || showData">
+    Your mark's is {{mark}}, you are Passed!
+</div>
+
+<br>
+<h5>*ngFor==>Directives</h5>
+<select>
+    <option *ngFor="let nm of country">{{nm}}</option>
+</select>
+
+
+<br><br>
+<h5>[ngSwitchCase]==>Directives</h5>
+<div class="container-fluid my-4">
+
+    <div [ngSwitch]="num">
+        <div *ngSwitchCase="1">your no is First</div>
+        <div *ngSwitchCase="2">your no is second</div>
+        <div *ngSwitchCase="3">your no is third</div>
+        <div *ngSwitchCase="4">your no is Fourth</div>
+        <div *ngSwitchCase="5">your no is Fifth</div>
+
+    </div>
+</div>
+</div>
+
+<div class="container">
+    <h3>Attribute Directives</h3>
+<!-- <div class="test1"> -->
+
+    <div [ngClass]="myClass1">
+    <p>This is ngclass Attribute Directive</p>
+</div>
+<br>
+<div [ngClass]="showData ? 'test1':'test2'">
+    <p>This is also ngClass Attribute directive with ternory operator</p>
+</div>
+<br>
+<div [ngStyle]="myStyle">
+    <p>This is ngStyle Attribute binding </p>
+</div>
+
+<div [ngStyle] = "{'color':'red', 'background-color': 'orange','border-radius':'5px'}" >
+    <p>This is ngStyle Attribute binding hello</p>
+</div>
+
+<div [ngClass]="myClass3">
+    <p>This is ngClass Attribute binding </p>
+
+</div>
+</div>

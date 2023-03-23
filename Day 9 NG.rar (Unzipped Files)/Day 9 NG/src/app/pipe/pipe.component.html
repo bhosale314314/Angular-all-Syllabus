@@ -1,0 +1,57 @@
+<h2> Agular Pipes: </h2>
+
+<h3> Uppercase</h3>
+<h4> Original Text:  {{test1}}</h4>
+<h4> Uppercase Text: {{test1 | uppercase}}</h4>
+<h4> Lowercase Text: {{test1 | lowercase}}</h4>
+<h4> Titlecase Tetxt: {{test1 | titlecase}}</h4>
+
+<br>
+
+<h3> Date</h3>
+<h4 >Original Date: {{date}}</h4>
+<h4> Standard Format: {{date | date}}</h4>
+<h4> Short Date: {{date | date:'short'}}</h4>
+<h4> Medium Date: {{date | date:'medium'}}</h4>
+<h4> dd/mm/yyyy Date: {{date | date:'dd/MM/yyyy'}}</h4>
+
+<br>
+
+<h3>Json</h3>
+<p>JSON Pipe: {{student |json}}</p>
+
+<br>
+
+<h3>Slice Pipe</h3>
+<h4> Original Text:  {{test1}}</h4>
+<h4> Uppercase Text: {{test1 | slice:5}}</h4>
+<h4> Lowercase Text: {{test1 | slice:2:5}}</h4>
+
+<br>
+
+<h3>Currency Pipe</h3>
+<h4> Original Text:  {{salary}}</h4>
+<h4> Ind Currency:  {{salary | currency:'INR'}}</h4>
+<h4> Ind Currency:  {{salary | currency:'USD'}}</h4>
+
+
+<br>
+
+<h3>Multiple pipes:</h3>
+<h4>Multiple pipes: {{test1 | slice: 0:5 | uppercase}}</h4>
+
+
+<br>
+
+<h3>Custom Pipe</h3>
+<h4> Original Text:  {{salary}}</h4>
+<h4> Custom pipe: {{salary | cust:10}}</h4>
+
+
+{{test1 | uppercase | cust}}
+
+
+<div class="container" appCustDir>
+    <h3> Custom directive Example</h3>
+    <p> This is custom directive implementation</p>
+</div>

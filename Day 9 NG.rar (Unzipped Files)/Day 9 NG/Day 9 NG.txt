@@ -1,0 +1,47 @@
+	Summary:
+	1. Intro to Angular
+	2. Installation Process 
+	3. Folders
+	4. Flow of the angular
+	5. Basic Building blocks of angular
+	6. modules
+	7. component
+	8. Angular Directives
+	9. Angular forms
+	10.Angular pipes
+	11.Custom directives
+	12.Custom Pipe.
+	
+	Angular component lifecycle:
+	
+	1) onChanges(): This method will call first time when component will came into picture/ came into DOM. 
+					Next time whenever there will be chnage in input proprty then this method will call.
+
+	2) onInit(): This will call when component came into dom and initilizes all the component variables into DOM.
+				This method will call after ngOnchnages.
+
+	3) doCheck():  This method is used for chnage detection purpose. Whenever there will be any chnage then this method will detect the chnages.
+
+	4) afterContentInit(): This method will call to initilize the content inside the component.
+
+	5) afterContentCheck(): This method is used to change detection inside the content i.e. inside the selctor.
+
+	6) afterViewinit(): This method will call to load view component itself.
+
+	7) afterViewCheck() : This method is used to change detection inside the component itself.
+
+	8) ngDestroy(): Unsuscribe all the component variables from the DOM.
+	
+	
+	Service:
+	
+	Service is basic building of angular.
+	It is used to seperate UI logic from basiness logic.
+	Service is a simple class with methods and properties.
+	We can create the service with command: ng g s serviceName
+	It is also used for inter component communication.
+	Basically service is used with purpose of backend communication as well code resability.
+	
+	
+	
+	

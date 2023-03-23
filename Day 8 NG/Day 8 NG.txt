@@ -1,0 +1,53 @@
+
+Custom Pipes:
+
+If user want to implement businness logic on perticular data through out the application 
+then we can write our business logic at common point i.e. inside custom pipe and can call anywhere in the application.
+Custom pipe will take arguments as an array with the help of rest operator.
+
+	{{data | custPipeName : arguments }}
+
+Angular ===> aNgUlAr ===> home work.
+Angular ===> ralugnA ===> home work.
+
+
+Custom Directive:
+There are two types of directives i.e. attribute directives and structural directives.
+We can build our own diretive to implement logic based on business requirement.
+can create custom directive with the help of command: ng g d dirName
+
+
+<div dirName>
+</div>
+
+Constructor:
+It is resposible for object creation of the class. 
+It is also resposible for dependency injection i.e. depend on something else.
+It is not a part of angular life cycle.
+It is  not compulsory to write constructor, if we dont write angular will invoke it by default.
+
+
+Angular Life Cycle methods /hooks:
+
+Angular component consists of 8 lifecycle hooks/ methods.
+Depend on each state all the methods are going to call.
+constructor is not a part of angular lifecycle and constructor will call before lifecycle came into picture.
+
+1) onChanges():
+
+2) onInit():
+
+3) doCheck(): 
+
+4) afterContentInit():
+
+5) afterContentCheck():
+
+6) afterViewinit():
+
+7) afterViewCheck() :
+
+8) ngDestroy(): 
+
+
+ 

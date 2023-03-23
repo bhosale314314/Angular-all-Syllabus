@@ -1,0 +1,5 @@
+
+Angular lazy loading:
+
+Lazy loading is used to decrese the loading time.
+Complete angular project has been devided into modular structure.

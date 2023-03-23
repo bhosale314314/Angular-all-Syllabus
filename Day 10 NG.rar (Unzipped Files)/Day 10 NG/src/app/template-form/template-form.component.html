@@ -1,0 +1,60 @@
+<h2> Template Drive Forms</h2>
+
+<form name ="myForm" #frm="ngForm"  (ngSubmit)="frm.form.valid && onSubmitForm(frm)">
+    <div class="form-group">
+        <label for="fistName">First Name: <span style="color: red;">*</span> </label>
+        <input type="text" class="form-control" name="fname" #fname="ngModel" ngModel
+        required [ngClass]="{'is-invalid': frm.submitted && fname.invalid}"
+        placeholder="First Name is required" >
+        <div *ngIf="frm.submitted && fname.invalid" class="invalid-feedback">First name is required</div>
+    </div>
+
+    <div class="form-group">
+        <label for="lastName">Last Name: <span style="color: red;">*</span> </label>
+        <input type="text" class="form-control" name="lname" #lname="ngModel" ngModel
+        required [ngClass]="{'is-invalid': frm.submitted && lname.invalid}"
+        placeholder="Last Name is required">
+        <div *ngIf="frm.submitted && lname.invalid" class="invalid-feedback">Last name is required</div>
+    </div>
+
+    <div class="form-group">
+        <label for="fistName">Mail: </label>
+        <input type="email" class="form-control" name="email" #email="ngModel" ngModel
+        required [ngClass]="{'is-invalid': frm.submitted && email.invalid}"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+        <div *ngIf="email.touched" class="invalid-feedback">
+            <p *ngIf="email.errors?.['required']">Email is a required field!</p>
+            <p *ngIf="email.errors?.['pattern']">This is not a valid Email!!!</p>
+          </div>
+    </div>
+
+    <div class="form-group">
+        <label >Select course:</label>
+        <select class="form-control" name="course" #course="ngModel" ngModel>
+            <option *ngFor="let course of courses">{{course}}</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label >Gender : </label>
+        <input type="radio" name="gender" value="male" #gender="ngModel" ngModel>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" #gender="ngModel" ngModel>
+        <label for="female">Female</label>
+    </div>
+
+    <div class="form-group">
+        <label for="pass">Password: </label>
+        <input type="password" class="form-control" name="pass" #pass="ngModel" ngModel>
+    </div>
+
+    <div class="form-group">
+        <label for="cpass">Confirm Password: </label>
+        <input type="password" class="form-control" name="cpass" #cpass="ngModel" ngModel>
+    </div><br>
+
+    <div class="form-group">
+        <button class="btn btn-info">Submit</button>
+        <!-- <input type="submit" class ="btn btn-info" value="Save"> -->
+    </div>
+</form>

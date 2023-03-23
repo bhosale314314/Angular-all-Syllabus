@@ -1,0 +1,21 @@
+
+Angular Routing:
+
+Angular routing is responsible SPA.
+Using Routing we can navigate from one component to another component.
+Router came from @angular/router
+
+
+1. 	Routes: It is an array of object which contain path and mapped component.
+
+2. path: String which specifies route of the component.
+
+3. routerLink: Used to navigate from one component to another component from comp.html.
+
+4. router.navigate: Used to navigate from one component to another component from comp.ts based on business logic.
+
+5. router.navigateByUrl: Used to navigate from one component to another component from comp.ts based on business logic.
+
+6. wildcard: It is used to handle mismatch in the path. Always wildcard will be at thebottom of routes.
+
+7. redirectTo: Used to navigate to existing path or component.

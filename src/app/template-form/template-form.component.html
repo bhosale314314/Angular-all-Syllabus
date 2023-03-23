@@ -1,0 +1,59 @@
+<h2> Template Drive Forms</h2>
+
+<form name="myForm" #frm="ngForm" (ngSubmit)="onSubmitForm(frm)" class="abc p-3">
+<div class="form-group">
+    <div class="row">
+        <div class="col text-center p-2 mb-1 bg-green">Admission Form</div>
+    </div>
+    <label for="first name mx-5 py-10">First Name:<span style="color:red;" >*</span></label>
+    <input type="text" class="form-control" name="fname" #fname="ngModel" ngModel 
+    required [ngClass]="{'is-invalid': frm.submitted && fname.invalid}"
+     placeholder="First Name is required">
+     <div *ngIf="frm.submitted && fname.invalid" class="invalid-feedback">First name is required</div>
+    
+</div>
+<div class="form-group">
+    <label for="last name">Last Name:<span style="color:red;" >*</span></label>
+    <input type="text" class="form-control" name="lname" #lname="ngModel" ngModel
+    required [ngClass]="{'is-invalid': frm.submitted && lname.invalid}"
+        placeholder="Last Name is required">
+        <div *ngIf="frm.submitted && lname.invalid" class="invalid-feedback">Last name is required</div>
+</div>
+<div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" name="email" #email="ngModel" ngModel>
+</div>
+<div class="form-group">
+    <label for="course">Select Course</label>
+    <select class="form-control" name="course" #course="ngModel" ngModel>
+    <option *ngFor="let course of courses">{{course}}</option >
+</select>
+</div>
+
+<div class="form-group">
+    <label for="Gender">Gender:</label>
+    <input type="radio" name="gender" value="male" #male="ngModel" ngModel>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" value="female" #female="ngModel" ngModel>
+    <label for="female">Female</label>
+</div>
+
+<div class="form-group">
+    <label for="pass">Password:</label>
+    <input type="password" name="pass" class="form-control" #pass="ngModel" ngModel>
+</div>
+<div class="form-group">
+    <label for="cpass">Confirm Password:</label>
+    <input type="password" name="cpass" class="form-control" #cpass="ngModel" ngModel>
+</div>
+<div class="form-group">
+    <label for="mobile">Mobile No:</label>
+    <input type="text" class="form-control" name="mobile" #mobile="ngModel" ngModel>
+</div>
+<br>
+
+<div class="form-group">
+    <button class="btn btn-success mx-3">Submit</button>
+<button type="reset" class="btn btn-danger mx-3">Reset</button>
+</div>
+</form>

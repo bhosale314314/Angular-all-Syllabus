@@ -1,0 +1,20 @@
+
+Promises in Angular:
+	Promises has been introduced in ES6. 
+	Promise are async or parellal flow of execution execution which can handle single event at a time.
+	Promises gives only one value.
+	States of Promise:
+	resolve(): Promises has been successfully executed. 
+	reject(): Promises has not been successfully executed.
+	Pending State: Promise is yet to execute.
+	Promises can not be cancelled.
+	Promises are used for http calls.
+
+
+Observables Vs Promises:
+
+	Obs: Can handle multiple events at a time. Prom: Can handle single events at a time.
+	Obs: Can be cancelled. Prom: Can not be cancelled.
+	Obs: Came from RxJs. Prom: came from ES6.
+	Obs: need to subscibe the data. Prom: no need to subscibe the data.
+	Obs: can hanlde next, complete, error. Prom: can handle either resolve or reject.

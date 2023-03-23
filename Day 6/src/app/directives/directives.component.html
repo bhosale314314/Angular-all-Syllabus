@@ -1,0 +1,45 @@
+<h1>Directives</h1>
+<h3>Structural Directives</h3>
+<div *ngIf="(age > 18) || showData">
+    Your age is {{age}} and your are eligible 
+</div>
+
+<select>
+    <option *ngFor="let nm of names">{{ nm }}</option>
+</select>
+
+<div [ngSwitch]="num">
+    <div *ngSwitchCase ="'1'">One</div>
+    <div *ngSwitchCase ="'2'">One</div>
+    <div *ngSwitchDefault> Default</div>
+</div>
+
+
+<h3>Attribute Directives</h3>
+
+<div [ngClass]="myClass1">
+<!-- <div class="test1"> -->
+    <p>This is ngClass Attribute directive</p>
+</div>
+
+<br><br>
+
+<div [ngClass]="showData ? 'test1' : 'test2'">
+    <p>This is also ngClass Attribute directive with ternory operator</p>
+</div>
+
+<div [ngStyle] = "{'color':'red', 'font-size': '40px', 'background-color': 'skyblue'}" >
+    <p>This is ngStyle Attribute binding </p>
+</div>
+
+<div [ngStyle] = "myStyle" >
+    <p>This is ngStyle Attribute binding </p>
+</div>
+
+
+<div [ngClass] = "myClass3" >
+    <p>This is ngStyle Attribute binding </p>
+</div>
+
+
+<button class="btn btn-link"> Submit</button>

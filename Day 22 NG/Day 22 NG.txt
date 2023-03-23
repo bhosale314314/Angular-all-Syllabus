@@ -1,0 +1,22 @@
+
+Angular Interceptors and Error Handling:
+
+Http Interceptor:
+
+Interceptors are middleware between http calls and backend.
+It is used to process the http request as well http reposnse.
+If you want to handle errors in angular application then we can handle with the help of http interceptor. errors like 500 or 404.
+To create http interceptor need to use command : ng g interceptor interceptorName
+
+It is also used in Authorization process.
+
+
+Authentication :
+This will be achieved with the help of JWT as well as interceptor.
+
+Authorization: 
+This will be achieved with the help of guards.
+
+
+
+

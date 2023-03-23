@@ -1,0 +1,41 @@
+
+
+Angular + node Crud Application:
+
+step 1: Download folder crud_node from shared drive.
+
+step 2: Extract and run command nmm install. This will install backend node.js code.
+
+step 3: run command:  node express.js
+
+step 4: check on browser for node js code is running or not. : http://localhost:3000/
+
+Step 5: to get all the data of emp:
+		create comp and call the api get: http://localhost:3000/api/getAllCourses will get all the data. assing it to one variable 
+			and show that data in tabular format.
+			Table data are having two actions edit and delete.
+			
+Step 6: Insert the data.
+		create template/ reactive form with same filed names as mentioned in above API. 
+		get the data comp.ts and send it to service in temrs json.
+		and call the API post: http://localhost:3000/api/insertCourses 
+		once i recieve the respose navigate to get all data comp.
+		
+Step 7: Update the data:
+		From get all emp comp send the particular emp data to update comp using service communication.
+		Create the form which shows built in value which u recieved from get all emp comp. ( using ngModel or reactive form)
+		update the data and send to the API.
+		call the APi: put : http://localhost:3000/api/updateCourses/'+data.id,data
+		
+Step 8: Delete the data:
+		on the get all emp data comp only call the delete API and send the particular id and after that refresh the page 
+		or call get all emp data api once again.
+		api delete: http://localhost:3000/api/deleteCourses/'+id
+		
+		
+Step 9: Test call the API on postman.
+		to download and install postaman: https://www.postman.com/downloads/
+		
+		
+		
+		

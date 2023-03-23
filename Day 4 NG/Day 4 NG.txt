@@ -1,0 +1,22 @@
+
+Angular Bootstrap Installation Process:
+
+	Step 1 : npm install bootstrap --save
+	
+	Step 2 : import css inside style.css file.
+		@import "~bootstrap/dist/css/bootstrap.css";
+		
+	Bootstrapping Process:
+		Bootstrapping means to start the project.
+		
+Directives:
+	Directives are responsible for adding and removing the elements from the DOM as well as changing the behaviour of the DOM.
+	There are thee types of directives:
+	
+	1) Component: component is the directive with the template.
+	2) Structural Directives: 
+		Structural Directives are responsible for adding as well as removing the elements from the DOM.
+		ngIf, ngFor, ngSwitch
+		
+		
+		

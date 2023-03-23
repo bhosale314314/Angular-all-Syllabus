@@ -1,0 +1,20 @@
+
+RxJS Operator:
+
+1. from: Used to convert noramal array data into stream of data or observables.
+
+2. of: Used to convert comma seperated data into stream of data or observables.
+
+3. map: Map is used to covert data into new observables.
+
+4. pipe: Can combine multiple operators at a single point. i.e. map, filter.
+
+5. filter: Used to filter the data based on given condition.
+
+RxJs Special Operators:
+
+Normal operators are unicast but special operators are multicast operators.
+
+1. subject:
+
+2. Behaviour Subject:

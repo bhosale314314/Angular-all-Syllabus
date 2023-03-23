@@ -1,0 +1,14 @@
+
+3) Attribute Directives:
+	Directives which are responsible for chnaging the behaviour of the DOM is called as attr directives.
+	ngClass and ngStyle.
+	
+	diffwrence bet component and directives:
+	Comp is collection of class, template and decorator. Comp is having their own template.
+	Dir are responsible for adding and removing the element from the dom as well as chnagin the behaviour of the dom.
+	dir doesn't have their own template.
+	
+	
+* Angular Forms:
+	Forms are to collect the data from the user and send it to backend for future use.
+	There are two types of fomrs i.e. template driven form and reactive fomrs.

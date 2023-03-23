@@ -1,0 +1,17 @@
+
+<div class="card bg-info">
+    <div class="card-header">Parent Component</div>
+
+    <div class="card-body">
+        This is parent component.
+        <p class="bg-danger">{{dataFromChildToParent}}</p>
+
+        <br>
+
+        <p class="bg-success" *ngIf="dataWithViewChild">{{dataWithViewChild}}</p>
+    </div>
+</div>
+<br><br>
+<app-child [parentData]="dataFromParentToChild" (itemEvent12)="emitDataFromChild($event)"></app-child>
+
+

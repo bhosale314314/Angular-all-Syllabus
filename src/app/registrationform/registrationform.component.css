@@ -1,0 +1,17 @@
+
+form{
+    width: 500px;
+    background-color: rgba(21, 233, 180, 0.63);
+}
+.border{
+    
+    border-radius: 10px;
+    
+}
+.col-a{
+    font-size: 30px;
+}
+.col{
+    font-size: 20px;
+    
+}

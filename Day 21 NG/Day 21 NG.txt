@@ -1,0 +1,14 @@
+
+Angular Test cases:
+
+benefits:
+	1. Code rectoring means functionalitywise testing.
+	2. Chnaces of less errors through out the application.
+	3. If you are adding new features then will easily understand our application is breaking or not.
+	
+	To write test cases in angular we require two things:
+	1. Jasmine: It is an third party library. Using jasmine we can write test cases.
+	2. karma: It is a runner which will help to run the test cases.
+	
+	To test our test cases we have commond: ng test
+	To see how much test cases we have covered : ng test --code-coverage
